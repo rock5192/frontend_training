@@ -1,8 +1,36 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>form creation</title>
 	</head>
+
 	<body>
-		<h1>Hello Everyone</h1>
+
+		<h1>Ready To Get Started</h1>
+		<form id="formsub" action=""/action_page.php" method="GET" target="_self">
+			First Name
+			<br>
+			<input type="text" required name="first" id="first1" placeholder="First Name">
+			<span id="firstname-error"></span>
+			<br>
+			<br>
+			Last Name
+			<br>
+			<input type="text" required name="last" id="last1" placeholder="Last Name">
+			<span id="lastname-error"></span>
+			<br>
+			<br>
+			Phone
+			<br>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{6}"
+			required placeholder="phone no">
+
+
+<span class="note">Format: 9841-*****</span>
+
+			<br>
+			<br>
+			<button type="submit" id="btn1">submit</button>
+
 	</body>
 </html>
